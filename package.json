@@ -1,0 +1,20 @@
+{
+  "name": "duplex-lsp-connection",
+  "version": "1.0.0",
+  "description": "Establish language server protocol connection over a Duplex",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "author": "Eljo George",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -b ./"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.3",
+    "@types/node": "^20.11.30"
+  },
+  "dependencies": {
+    "vscode-jsonrpc": "^8.2.0",
+    "vscode-languageserver-protocol": "^3.17.5"
+  }
+}

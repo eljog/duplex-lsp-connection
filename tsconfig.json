@@ -1,0 +1,41 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "module": "commonjs",
+        "baseUrl": ".",
+        "target": "es6",
+        "outDir": "dist",
+        "moduleResolution": "node",
+        "composite": true,
+        "noUnusedParameters": false,
+        "declaration": true,
+        "resolveJsonModule": true,
+        "strictNullChecks": false,
+        "esModuleInterop": true,
+        "noUnusedLocals": false,
+        "forceConsistentCasingInFileNames": true,
+        "experimentalDecorators": true,
+        "allowJs": true,
+        "sourceMap": true,
+        "inlineSources": true,
+        "emitDecoratorMetadata": true,
+        "removeComments": false,
+        "noImplicitAny": true,
+        "noEmitOnError": true,
+        "skipLibCheck": true,
+        "stripInternal": true,
+        "strict": true,
+        "lib": [
+            "es6",
+            "es2020.promise",
+            "dom",
+            "dom.iterable"
+        ],
+    },
+    "include": [
+        "./src/**/*",
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
