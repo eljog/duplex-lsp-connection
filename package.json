@@ -1,17 +1,27 @@
 {
   "name": "duplex-lsp-connection",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Establish language server protocol connection over a Duplex",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
   "author": "Eljo George",
   "license": "MIT",
-  "scripts": {
-    "build": "tsc -b ./"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eljog/duplex-lsp-connection.git"
   },
+  "scripts": {
+    "build": "tsc -b ./",
+    "publish": "yarn publish --access public",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "dist/src/**/*",
+    "README.md"
+  ],
   "devDependencies": {
-    "typescript": "^5.4.3",
-    "@types/node": "^20.11.30"
+    "@types/node": "^20.11.30",
+    "typescript": "^5.4.3"
   },
   "dependencies": {
     "vscode-jsonrpc": "^8.2.0",
