@@ -1,4 +1,5 @@
-import { Disposable, Duplex } from 'vscode-jsonrpc';
+import { Disposable } from 'vscode-jsonrpc';
+import { Duplex } from 'stream';
 
 class WStream {
     public constructor(private duplex: Duplex) {
