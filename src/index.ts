@@ -14,3 +14,5 @@ export function createProtocolConnectionFromDuplex(duplex: Duplex) {
     );
     return connection;
 }
+
+export { DLCSettings, overrideSettings, getSettings } from './settings';

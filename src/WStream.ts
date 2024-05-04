@@ -1,7 +1,9 @@
 import { Disposable } from 'vscode-jsonrpc';
 import { Duplex } from 'stream';
+import { getSettings } from './settings';
 
 class WStream {
+    ;
     public constructor(private duplex: Duplex) {
     }
 
@@ -32,7 +34,12 @@ class WStream {
             console.log(`writing data ${Buffer.from(data).toString()}`);
             this.duplex.write(data, encoding, (err) => {
                 if (err) {
-                    reject(err);
+                    if (getSettings().noReject) {
+                        console.error(`Error writing data: ${err}`);
+                        resolve();
+                    } else {
+                        reject(err);
+                    }
                 } else {
                     resolve();
                 }
